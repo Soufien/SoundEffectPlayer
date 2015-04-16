@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)playEffect:(id)sender;
 
 @end
 

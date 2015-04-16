@@ -14,6 +14,11 @@
 		C76286D21ADFFD8B003CF489 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C76286D11ADFFD8B003CF489 /* Images.xcassets */; };
 		C76286D51ADFFD8B003CF489 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C76286D31ADFFD8B003CF489 /* LaunchScreen.xib */; };
 		C76286E11ADFFD8B003CF489 /* SoundEffectPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C76286E01ADFFD8B003CF489 /* SoundEffectPlayerTests.m */; };
+		C76286FE1ADFFDD5003CF489 /* CDAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C76286F61ADFFDD5003CF489 /* CDAudioManager.m */; };
+		C76286FF1ADFFDD5003CF489 /* CDOpenALSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = C76286F91ADFFDD5003CF489 /* CDOpenALSupport.m */; };
+		C76287001ADFFDD5003CF489 /* CocosDenshion.m in Sources */ = {isa = PBXBuildFile; fileRef = C76286FB1ADFFDD5003CF489 /* CocosDenshion.m */; };
+		C76287011ADFFDD5003CF489 /* SimpleAudioEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = C76286FD1ADFFDD5003CF489 /* SimpleAudioEngine.m */; };
+		C76287031ADFFE0C003CF489 /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C76287021ADFFE0C003CF489 /* test.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,16 @@
 		C76286DA1ADFFD8B003CF489 /* SoundEffectPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundEffectPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76286DF1ADFFD8B003CF489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C76286E01ADFFD8B003CF489 /* SoundEffectPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoundEffectPlayerTests.m; sourceTree = "<group>"; };
+		C76286F51ADFFDD5003CF489 /* CDAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDAudioManager.h; sourceTree = "<group>"; };
+		C76286F61ADFFDD5003CF489 /* CDAudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDAudioManager.m; sourceTree = "<group>"; };
+		C76286F71ADFFDD5003CF489 /* CDConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDConfig.h; sourceTree = "<group>"; };
+		C76286F81ADFFDD5003CF489 /* CDOpenALSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDOpenALSupport.h; sourceTree = "<group>"; };
+		C76286F91ADFFDD5003CF489 /* CDOpenALSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDOpenALSupport.m; sourceTree = "<group>"; };
+		C76286FA1ADFFDD5003CF489 /* CocosDenshion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocosDenshion.h; sourceTree = "<group>"; };
+		C76286FB1ADFFDD5003CF489 /* CocosDenshion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocosDenshion.m; sourceTree = "<group>"; };
+		C76286FC1ADFFDD5003CF489 /* SimpleAudioEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAudioEngine.h; sourceTree = "<group>"; };
+		C76286FD1ADFFDD5003CF489 /* SimpleAudioEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleAudioEngine.m; sourceTree = "<group>"; };
+		C76287021ADFFE0C003CF489 /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +96,7 @@
 		C76286C31ADFFD8B003CF489 /* SoundEffectPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				C76286F41ADFFDD5003CF489 /* CocosDenshion */,
 				C76286C81ADFFD8B003CF489 /* AppDelegate.h */,
 				C76286C91ADFFD8B003CF489 /* AppDelegate.m */,
 				C76286CB1ADFFD8B003CF489 /* ViewController.h */,
@@ -96,6 +112,7 @@
 		C76286C41ADFFD8B003CF489 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C76287021ADFFE0C003CF489 /* test.mp3 */,
 				C76286C51ADFFD8B003CF489 /* Info.plist */,
 				C76286C61ADFFD8B003CF489 /* main.m */,
 			);
@@ -117,6 +134,22 @@
 				C76286DF1ADFFD8B003CF489 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C76286F41ADFFDD5003CF489 /* CocosDenshion */ = {
+			isa = PBXGroup;
+			children = (
+				C76286F51ADFFDD5003CF489 /* CDAudioManager.h */,
+				C76286F61ADFFDD5003CF489 /* CDAudioManager.m */,
+				C76286F71ADFFDD5003CF489 /* CDConfig.h */,
+				C76286F81ADFFDD5003CF489 /* CDOpenALSupport.h */,
+				C76286F91ADFFDD5003CF489 /* CDOpenALSupport.m */,
+				C76286FA1ADFFDD5003CF489 /* CocosDenshion.h */,
+				C76286FB1ADFFDD5003CF489 /* CocosDenshion.m */,
+				C76286FC1ADFFDD5003CF489 /* SimpleAudioEngine.h */,
+				C76286FD1ADFFDD5003CF489 /* SimpleAudioEngine.m */,
+			);
+			path = CocosDenshion;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +234,7 @@
 			files = (
 				C76286D01ADFFD8B003CF489 /* Main.storyboard in Resources */,
 				C76286D51ADFFD8B003CF489 /* LaunchScreen.xib in Resources */,
+				C76287031ADFFE0C003CF489 /* test.mp3 in Resources */,
 				C76286D21ADFFD8B003CF489 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,8 +254,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C76286CD1ADFFD8B003CF489 /* ViewController.m in Sources */,
+				C76287001ADFFDD5003CF489 /* CocosDenshion.m in Sources */,
+				C76286FF1ADFFDD5003CF489 /* CDOpenALSupport.m in Sources */,
+				C76287011ADFFDD5003CF489 /* SimpleAudioEngine.m in Sources */,
 				C76286CA1ADFFD8B003CF489 /* AppDelegate.m in Sources */,
 				C76286C71ADFFD8B003CF489 /* main.m in Sources */,
+				C76286FE1ADFFDD5003CF489 /* CDAudioManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +308,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -313,7 +351,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;

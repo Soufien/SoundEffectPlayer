@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SimpleAudioEngine.h"
 
 @interface ViewController ()
 
@@ -24,4 +25,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (IBAction)playEffect:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"test.mp3" pitch:0.5 pan:0.5 gain:1];
+}
 @end
